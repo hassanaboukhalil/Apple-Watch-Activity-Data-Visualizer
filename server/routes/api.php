@@ -16,8 +16,6 @@ Route::group(['prefix' => 'v1'], function () {
 
 
     // Unauthenticated routes
-    Route::group(['prefix' => 'guest'], function () {
-        Route::post('/login', [AuthController::class, 'login']);
-        Route::post('/signup', [AuthController::class, 'signup']);
-    });
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/signup', [AuthController::class, 'signup']);
 });
