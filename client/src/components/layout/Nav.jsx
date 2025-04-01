@@ -12,7 +12,7 @@ const Nav = () => {
   };
 
   return (
-    <nav>
+    <nav className="nav">
       <ul className="flex justify-end list-none text-white body2">
         {isLoggedIn ? (
           <li>
