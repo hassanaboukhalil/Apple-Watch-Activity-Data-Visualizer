@@ -1,11 +1,4 @@
 :root {
-  /* --primary-color: #0866FF;  
-  --secondary-color: #42B72A; 
-  --tertiary-color: #E5F3FF;
-  --form-input-border: #F0F0F0;
-  --white-color: #fff;
-  --black-color: #000; */
-
   /* font sizes */
   --h1: 4rem; /* 64px */
   --h2: 2.5rem; /* 40px */
@@ -56,15 +49,11 @@ nav {
 
 /************** colors */
 /* bg colors */
-.bg-success{
-    background-color: #46D5B2;
-}
-
 .bg-primary{
-    background-color: #0866FF;
+    background-color: #0077b6;
 }
 .bg-secondary{
-    background-color: #42B72A;
+    background-color: #FCB97D;
 }
 .bg-tertiary{
     background-color: #E5F3FF;
@@ -84,13 +73,16 @@ nav {
 .bg-gray2{
   background-color: #F6F6F6;
 }
+.bg-success{
+    background-color: #46D5B2;
+}
 
 /* text colors */
 .text-primary {
-    color: #0866FF;
+    color: #0077b6;
 }
 .text-secondary{
-    color: #42B72A;
+    color: #FCB97D;
 }
 .text-tertiary{
     color: #E5F3FF;
@@ -140,6 +132,11 @@ nav {
 
 .body4{
     font-size: var(--body4);
+}
+
+/************** text decorations */
+.underline{
+  text-decoration: underline;
 }
 
 
@@ -264,7 +261,9 @@ nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
+.mt-8{
+  margin-top: 2rem;
+}
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -280,9 +279,6 @@ nav {
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-.mt-8{
-  margin-top: 4rem;
 }
 
 
@@ -322,7 +318,7 @@ nav {
   padding-left: var(--container-padding-x);
   margin-right: auto;
   margin-left: auto;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 

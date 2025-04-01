@@ -1,3 +1,49 @@
+/************** layout components */
+
+.header{
+  gap: 0.5rem;
+  /* height: 85px;   */
+  height: 12vh;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav > ul {
+  gap: 2rem;
+}
+
+main{
+  min-height: 88vh;
+}
+
+.sidbar ul {
+    list-style: none;
+    background-color: white;
+    width: 300px;
+    color: black;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.sidbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+/************** others */
 .btn{
   border-radius: 8px;
   cursor: pointer;
@@ -31,16 +77,6 @@ input[type="button"]{
     cursor: pointer;
 }
 
-
-.header{
-  gap: 0.5rem;
-  height: 85px;  
-}
-
-.nav > ul {
-  gap: 2rem;
-}
-
 a{
   text-decoration: none;
   color: inherit;
@@ -60,10 +96,6 @@ a{
 .input-search{
   width: 360px;
 }
-
-/* a:visited{
-  color: white;
-} */
 
 /* MODAL STYLES */
 .modal-overlay {
