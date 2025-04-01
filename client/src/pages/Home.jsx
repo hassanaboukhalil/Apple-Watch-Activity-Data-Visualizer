@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <Section>
         <>
-          <p>Homeeeeee</p>
+          <p>home</p>
         </>
       </Section>
     </>
