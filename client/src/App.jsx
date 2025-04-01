@@ -1,14 +1,19 @@
 import "./App.css";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Login from "./pages/login";
+import Dashboard from "./pages/Dashboard";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/signup" element={<Signup />} /> */}
+        <Route path="/signup" element={<Signup />} />
         <Route path="/*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>
