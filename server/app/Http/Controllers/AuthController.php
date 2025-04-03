@@ -28,4 +28,31 @@ class AuthController extends Controller
             ], 500);
         }
     }
+
+
+    function login(Request $request)
+    {
+        try {
+            $password = bcrypt($request->password);
+
+            $user = User::where('email', $request->email)->first();
+
+            if ($user && $user->password === $password) {
+                return response()->json([
+                    "success" => true,
+                    "user" => $user
+                ]);
+            } else {
+                return response()->json([
+                    "success" => false,
+                    "user" => null
+                ]);
+            }
+        } catch (\Exception $e) {
+            return response()->json([
+                "success" => false,
+                "message" => $e->getMessage()
+            ], 500);
+        }
+    }
 }
